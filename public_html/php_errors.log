@@ -1,0 +1,52 @@
+[09-Jun-2025 04:31:42 Europe/Berlin] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for table surveys in /var/www/html/gabonsonde/public_html/sondage.php on line 159
+[09-Jun-2025 04:31:43 Europe/Berlin] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for table surveys in /var/www/html/gabonsonde/public_html/resultats.php on line 166
+[09-Jun-2025 04:31:44 Europe/Berlin] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for table surveys in /var/www/html/gabonsonde/public_html/sondage.php on line 159
+[09-Jun-2025 04:32:50 Europe/Berlin] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for table responses in /var/www/html/gabonsonde/public_html/resultats.php on line 166
+[09-Jun-2025 04:33:03 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table questions in /var/www/html/gabonsonde/public_html/sondage.php on line 63
+[09-Jun-2025 04:34:11 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 04:42:28 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:09:38 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:11:06 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:11:11 Europe/Berlin] PHP Warning:  require_once(db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:11:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_survey.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:13:06 Europe/Berlin] PHP Warning:  require_once(db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:13:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_survey.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:13:09 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:13:17 Europe/Berlin] PHP Warning:  require_once(db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:13:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_survey.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_survey.php on line 6
+[09-Jun-2025 05:15:34 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:15:46 Europe/Berlin] PHP Warning:  pg_execute(): Query failed: ERROR:  permission denied for table options in /var/www/html/gabonsonde/public_html/sondage.php on line 93
+[09-Jun-2025 05:22:01 Europe/Berlin] PHP Warning:  require_once(db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:22:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_order.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:23:53 Europe/Berlin] PHP Warning:  require_once(../include/db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:23:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../include/db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_order.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:23:57 Europe/Berlin] PHP Warning:  require_once(../include/db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:23:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../include/db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_order.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:24:10 Europe/Berlin] PHP Warning:  require_once(../include/db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:24:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../include/db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_order.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:24:13 Europe/Berlin] PHP Warning:  require_once(../include/db_connect.php): Failed to open stream: No such file or directory in /var/www/html/gabonsonde/public_html/process_order.php on line 6
+[09-Jun-2025 05:24:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../include/db_connect.php' (include_path='.:/usr/share/php') in /var/www/html/gabonsonde/public_html/process_order.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/gabonsonde/public_html/process_order.php on line 6

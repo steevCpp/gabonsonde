@@ -1,0 +1,308 @@
+/* Import Google Fonts - Roboto, Lato, Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/* Chilanka font can be added here if essential for login page, e.g.: */
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+/* Basic body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+    background-color: #f4f4f4; /* Page background color */
+    /* Define primary colors as CSS variables */
+    --bs-primary-rgb: 0, 92, 169; /* #005CA9 */
+    --bs-secondary-rgb: 40, 167, 69; /* #28a745 */
+    --app-color-blue: #005CA9;
+    --app-color-green: #28a745; /* Corresponds to .bk-color-green for icons */
+    --app-color-yellow: #FFFF00; /* Corresponds to .bk-color-yellow for icons */
+    --app-color-blue-icon: #0052FF; /* Corresponds to .bk-color-blue for icons */
+    --app-color-red-icon: #ff0000; /* Corresponds to .bk-color-red for plan heads, etc. */
+    --app-color-primary-plan: #007bff; /* BS primary for plan heads */
+    --app-color-success-plan: #28a745; /* BS success for plan heads */
+
+
+    --app-color-white: #FFFFFF;
+    --app-color-gray-dark: #343a40;
+    --app-color-gray-light: #f8f9fa;
+    --app-font-chilanka: 'Chilanka', cursive;
+}
+
+.bg-dark-green {
+    background-color: #004d40 !important; /* Un vert foncé, exemple de code couleur */
+}
+
+
+/* Vous pourriez vouloir ajuster la couleur des liens si navbar-dark ne suffit pas */
+.bg-dark-green .navbar-nav .nav-link {
+    color: #ffffff; /* Texte des liens blanc */
+}
+
+.bg-dark-green .navbar-nav .nav-link.active {
+    color: #ccff90; /* Couleur des liens actifs (ex: vert clair pour le contraste) */
+}
+
+/* Au survol des liens (optionnel) */
+.bg-dark-green .navbar-nav .nav-link:hover {
+    color: #e0f2f1; /* Une couleur légèrement différente au survol */
+}
+
+
+
+
+/* Navbar custom styling */
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #dee2e6;
+}
+.navbar-brand img {
+    height: 40px;
+    border-radius: 50%;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    font-weight: 700;
+    color: var(--app-color-blue) !important;
+    border-bottom: 2px solid var(--app-color-blue);
+}
+
+/* Common container styling for page content boxes */
+.survey-specific-container,
+.results-specific-container,
+.commander-specific-container,
+.login-content-container,
+.page-section { /* Generic class for main page sections if needed */
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .25rem;
+}
+
+/* Styles for sondage.php */
+.survey-form { margin-top: 1.5rem; }
+details {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+summary {
+    font-weight: bold; cursor: pointer; font-size: 1.2em;
+    color: var(--app-color-blue); padding: 0.5rem 0;
+    list-style: none; position: relative;
+}
+summary::-webkit-details-marker { display: none; }
+summary::before {
+    content: '+'; color: var(--app-color-blue);
+    margin-right: 0.5rem; font-weight: bold;
+}
+details[open] > summary::before { content: '-'; }
+.question { margin-top: 1rem; padding-left: 1.5rem; }
+.question p { font-weight: 500; margin-bottom: 0.75rem; font-size: 1rem; }
+
+/* Styles for resultats.php */
+.survey-result {
+    margin-bottom: 1.5rem; padding: 1.5rem;
+    background-color: var(--app-color-white);
+    border: 1px solid #dee2e6; border-radius: .25rem;
+}
+.survey-result h2 {
+    color: var(--app-color-blue); margin-top: 0;
+    font-size: 1.75rem; margin-bottom: 1rem;
+}
+.survey-result h3 {
+    color: var(--app-color-gray-dark); border-bottom: 1px solid #eee;
+    padding-bottom: .5rem; margin-top: 1.5rem; margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.question-analysis p { margin-left: 15px; }
+.interpretation {
+    background-color: #e7f3fe; border-left: 4px solid var(--app-color-blue);
+    padding: 1rem; margin-top: 1rem; font-style: italic;
+}
+
+/* Styles for login.php */
+#pinksquare {
+    display: flex; flex-direction: column;
+    justify-content: center;
+}
+#welcome {
+    padding: 1% 5%; display: flex; align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 126px); /* Adjusted for header and potential footer */
+    justify-content: center;
+}
+#welcome h1#lh1 {
+  font-family: var(--app-font-chilanka); font-weight: 900;
+  font-size: 2rem; text-align: center;
+  color: var(--app-color-blue); margin-bottom: 1rem;
+}
+#welcome p {
+    text-align: center; margin-bottom: 1rem;
+    font-family: var(--app-font-chilanka);
+}
+.databox {
+  width: 50%; max-width: 180px;
+  margin: 0 auto 1rem auto;
+}
+.databox img {
+  max-width: 100%; height: auto;
+  border-radius: 5px; border: 1px solid #dee2e6;
+}
+.login-form-group {
+    display: flex; flex-direction: column;
+    align-items: center; margin-bottom: 1rem;
+}
+.login-form-group label {
+    margin-bottom: .5rem;
+    font-family: var(--app-font-chilanka);
+}
+.login-form-group input.form-control {
+    max-width: 320px; text-align: center;
+}
+.login-button-group {
+    display: flex; justify-content: center;
+    gap: 1rem;
+}
+#errorMsg {
+    text-align: center; color: red;
+    min-height: 1.2em;
+    font-family: var(--app-font-chilanka);
+    margin-top: 1rem;
+}
+
+/* Styles for index.php (restored from home_assets_css/style.css) */
+#home-sec {
+    padding-top: 50px; /* Reduced from 100px, as navbar placeholder adds padding */
+    padding-bottom: 50px;
+    background: url(../images/home_assets_img/nzeng.JPEG) no-repeat center center; /* Corrected path assuming images folder is at root */
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--app-color-white);
+    /* display: flex; /* This can conflict with BS .container structure within */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center; /* For content within */
+}
+#home-sec h4 { color: var(--app-color-white); } /* Ensure text is white */
+#home-sec p { color: var(--app-color-white); font-size: 0.9rem; }
+
+.icon-round {
+    margin-top: 20px; /* Reduced from 30px */
+    font-size: 50px; /* Reduced from 60px */
+    height: 100px; /* Reduced from 128px */
+    width: 100px;  /* Reduced from 128px */
+    line-height: 100px; /* Match height */
+    color: var(--app-color-white) !important; /* Ensure icon color is white */
+    margin-right: auto; /* Centering if used in col */
+    margin-left: auto; /* Centering if used in col */
+    text-align: center;
+    display: inline-block; /* Was inline-block, works fine in BS columns */
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.icon-round:hover {
+    opacity: 0.8; /* Simple hover effect */
+}
+
+/* Icon background colors */
+.bk-color-green { background-color: var(--app-color-green); }
+.bk-color-yellow { background-color: var(--app-color-yellow); }
+.bk-color-yellow h4, .bk-color-yellow i.fa { color: var(--app-color-gray-dark) !important; } /* Dark text/icon on yellow */
+.bk-color-blue-icon { background-color: var(--app-color-blue-icon); } /* Renamed to avoid conflict with --app-color-blue */
+
+/* Stats Section */
+#sts-img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../images/home_assets_img/nzeng.JPEG) no-repeat center center; /* Same background, check path */
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--app-color-white);
+    text-align: center;
+}
+.stats-div h3 { font-size: 2.5rem; font-weight: 900; color: var(--app-color-white); }
+.stats-div h4 { font-size: 1.25rem; color: var(--app-color-white); }
+
+/* Price Section */
+#price-sec {
+    background-color: #fff; /* If not using .page-section for background */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+ul.plan {
+    background: #f8f9fa; /* Lighter background for plan itself */
+    padding: 0 0 15px 0;
+    margin: 15px 0; /* Reduced margin */
+    list-style: none;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+ul.plan:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* Bootstrap shadow-lg */
+}
+ul.plan li { padding: 10px 15px; color: var(--app-color-gray-dark); font-size: 0.95rem; }
+ul.plan li.plan-head {
+    padding: 1rem 0.75rem;
+    color: var(--app-color-white);
+    line-height: 1.5; font-size: 1.25rem; font-weight: 600;
+}
+/* Using Bootstrap background classes directly in HTML is preferred for these: */
+/* e.g., <li class="plan-head bg-danger text-white"> */
+.plan-head.btn-danger { background-color: var(--bs-danger) !important; } /* Bootstrap danger */
+.plan-head.btn-primary { background-color: var(--bs-primary) !important; } /* Bootstrap primary */
+.plan-head.btn-success { background-color: var(--bs-success) !important; } /* Bootstrap success */
+
+ul.plan li.main-price {
+    padding: 1rem 0.75rem;
+    background-color: var(--app-color-gray-dark);
+    color: var(--app-color-white);
+    font-weight: 900; font-size: 1.75rem;
+}
+ul.plan li.bottom { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+/* Contact Section */
+#contact-sec {
+     padding-top: 2rem; padding-bottom: 2rem;
+     background-color: #fff; /* If not using .page-section */
+}
+.cnt iframe { /* Class for the map iframe */
+    width: 100%;
+    min-height: 350px;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+}
+.add { /* Address text */
+    font-size: 1.25rem; /* Slightly larger */
+    font-weight: 500;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Ensure paths like ../images/home_assets_img/nzeng.JPEG are correct from the CSS file location. */
+/* If custom_style.css is in public_html/assets/css/, then path should be ../../images/... */
+/* Corrected paths for background images based on new location of custom_style.css */
+#home-sec {
+    background: url(../../assets/images/home_assets_img/nzeng.JPEG) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#sts-img {
+    background: url(../../assets/images/home_assets_img/nzeng.JPEG) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Generic section padding - if not using .page-section or Bootstrap utilities */
+/* .page-section-spaced { padding-top: 3rem; padding-bottom: 3rem; } */
+/* Example: #home-sec, #services-sec, #sts-img, #price-sec, #contact-sec could use this or BS utilities. */
+
+/* FontAwesome animation - ensure font-awesome-animation.css is loaded if these are used */
+/* .faa-vertical.animated, .faa-ring.animated, .faa-shake.animated might need specific setup if not working. */
+
+#services-sec .col-md-4 { /* Ensure some spacing for charts if they are too cramped */
+    padding: 15px;
+}
